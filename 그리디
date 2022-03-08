@@ -12,6 +12,7 @@ for coin in coin_types:
 print(count) # 최종 ocunt 수
 
 [큰 수의 법칙]
+
 N,M,K=map(int,input().split(' '))
 list1=[]
 list1=list(map(int,input().split(' ')))
