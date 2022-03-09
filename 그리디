@@ -95,3 +95,21 @@ for i in range(n):
     result=max(result,min_value) # 최소값 중에서도 최대값 뽑기 두번째 for문을 벗어나야함 *
      
 print(result)
+
+[1이 될때까지]
+
+n,k=map(int,input().split())
+
+sum1=0
+
+while n>=k:
+    if n%k!=0:
+        n-=1
+        sum1+=1
+    else:
+        n /= k
+        sum1+=1
+    if n==1:
+        break;
+
+print(sum1)
