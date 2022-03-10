@@ -1,0 +1,22 @@
+#111p 상하좌우 *
+
+n=int(input())
+arr1=input().split()
+
+a,b=1,1
+
+for j in arr1:
+    if j=='L':
+        if b>1:
+            b-=1
+    elif j=='R':
+        if b<n:
+            b+=1
+    elif j=='U':
+        if a>1:
+            a-=1
+    elif j=='D':
+        if a<n:
+            a+=1            
+        
+print(a,b)
